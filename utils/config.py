@@ -1,0 +1,6 @@
+OM_START_URL = "https://front{}.omegle.com/start"
+OM_DISCONNECT_URL = "https://front{}.omegle.com/disconnect"
+OM_EVENTS_URL = "https://front{}.omegle.com/events"
+OM_START_TYPING_URL = "https://front{}.omegle.com/typing"
+OM_STOP_TYPING_URL = "https://front{}.omegle.com/stoppedtyping"
+OM_SEND_URL = "https://front{}.omegle.com/send"
