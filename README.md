@@ -10,12 +10,11 @@ pip install pyomgclient
 # usage
 
 ```python 
-
 from pyomgclient.omgclient import Client
 
 client = Client()
 
-@client.set_on_open_cb
+@client.set_on_start_cb
 def on_open ():
   print ("stranger connected")
 
@@ -32,7 +31,7 @@ def on_typing ():
 @client.set_on_message_cb
 def on_message (msg):
   print ("message: "+msg)
-  # sends a message 
+  # sends a message
   # set typ = True for type and send
   client.send_message ("hi", typ = True)
   # or
