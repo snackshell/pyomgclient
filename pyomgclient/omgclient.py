@@ -1,6 +1,5 @@
 import random
 import requests
-import utils
 import sys
 import string
 import threading
