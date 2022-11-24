@@ -57,7 +57,7 @@ print (client.credentials())
 
 # Example Projects
 
-> [pyomgcli (made by us)](https://github.com/TheXProjects/pyomgcli)
+> example projects will be promoted here
 
 # ⚠️ DISCLAIMER
 
