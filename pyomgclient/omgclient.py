@@ -72,10 +72,18 @@ class Client:
 
   def start (self):
     res = generate_client_id(port = self.port, randid = self.randid, session = self.session)
-    self.clientId = res["clientID"]
+    if res["events"]:
+      for i in res["events"]:
+        if i[0] == "recaptchaRequired" and "recaptchaRequired" in self.events:
+          self.events["recaptchaRequired"](i[1])
+          
+    else:
+      self.clientId = res["clientID"]
+      if self.events.get("start"):
+        self.events.get("start")()
+
     if not self.poll.is_alive(): self.poll.start()
-    if self.events.get("start"):
-      self.events.get("start")()
+
 
   
   def credentials (self):
@@ -98,3 +106,8 @@ class Client:
 
   def set_on_disconnect_cb (self, cb):
     self.events["strangerDisconnected"] = cb
+
+  def set_on_recaptcha_cb (self, cb):
+    self.events["recaptchaRequired"] = cb
+
+
