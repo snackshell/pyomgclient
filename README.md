@@ -40,6 +40,14 @@ def on_message (msg):
   # stop typing must be called otherwise the typing wont turn off
   client.stop_typing()
 
+# solving recaptcha is not implemented on this project
+# so you can set event handler for that and notify the client to 
+# solve the captcha on the borwser
+@client.set_on_recaptcha_cb
+def on_captcha (key):
+  # do something with the key 
+  print ("point your browser at https://omegle.com/ and click start and solve the captcha")
+
 # always call the start function
 # atfer setting callbacks
 # otherwise client will connect without
