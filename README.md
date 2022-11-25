@@ -1,5 +1,6 @@
 # PyOMGClient
 > A PYTHON OMEGLE CLIENT 
+>> Well Maintained
 
 # installation
 
@@ -74,6 +75,5 @@ do not spam people with this
 and we are not responsible for any illegal purpose done with this project`
 
   `omegle may ban your ip address so be careful`
-
 
 **© XProjects**
