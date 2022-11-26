@@ -76,4 +76,6 @@ and we are not responsible for any illegal purpose done with this project`
 
   `omegle may ban your ip address so be careful`
 
+`Thankyou For The Likes`
+
 **© XProjects**
