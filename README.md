@@ -1,7 +1,7 @@
 # PyOMGClient
-> A PYTHON OMEGLE CLIENT 
+> A PYTHON OMEGLE CLIENT
 >> Well Maintained
-
+>>> `V 1.1.0`
 # installation
 
 ```bash
