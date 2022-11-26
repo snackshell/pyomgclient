@@ -62,7 +62,7 @@ print (client.credentials())
 
 # Solving Recaptcha
 
-**this project cannot solve captcha so if your client is not getting any updates then go to your browser and open omegle then solve the captcha**
+**this project cannot solve captcha but you can set handler for that with an arg(key) the key goes somewhere on https://front1.omegle.com/recaptcha with other payloads**
 
 # Example Projects
 
